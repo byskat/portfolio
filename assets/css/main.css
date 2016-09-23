@@ -30,17 +30,24 @@ body {
 
 .navbar-custom {
     background-color: #2C2C2C;
-    padding: 25px 0; 
     -webkit-transition: padding .3s;
     -moz-transition: padding .3s;
     transition: padding .3s;
     border: none;
+    margin: 0;
 
     font-family: "Stellar";
     font-weight: lighter;
     font-size: 20px;
 }
 
+.navbar-custom .navbar-header {
+    padding: 25px 0;
+}
+
+.navbar-custom #navbar {
+    padding: 25px 0;
+}
 
 .navbar-custom .navbar-left {
     width: 45%;   
@@ -68,6 +75,7 @@ body {
     color: #fff;
     text-transform: uppercase;
     line-height: 16px;
+    margin-bottom: 4px;
 }
 
 .navbar-custom .nav li.active a {
@@ -90,6 +98,16 @@ body {
     max-height:100%;
 }
 
+.navbar-logo-frame {
+    position: absolute;
+    left: 50%;
+}
+
+.navbar-logo-frame li {
+    position: relative;
+    left: -50%;
+}
+
 header {
     /*background-image: url("../img/blue'n'green.jpg");
     */
@@ -110,7 +128,6 @@ header .intro-text {
 }
 
 nav.navbar.shrink {
-  min-height: 35px;
 }
 
 
@@ -127,6 +144,10 @@ section{
 
 /* #### Responsive #### */
 
+div#navbar.in, div#navbar.collapsing {
+    padding: 0;
+}
+
 div#navbar.in ul, div#navbar.collapsing ul {
     width: 100%;
     margin: 0;
@@ -139,8 +160,5 @@ div#navbar.in ul li, div#navbar.collapsing ul li{
     float: left;
     display: inline-block;
     width: 100%;
-}
-
-div#navbar.in ul.navbar-center, div#navbar.collapsing ul.navbar-center{
-    display: none;
+    padding: 5px;
 }
