@@ -1,0 +1,9 @@
+Navbar:
+
+[ ] - Logo, animation? color changer? (maybe change color when section changes)
+[ ] - Shrink when scroll.
+[ ] - Responsive navbar
+	[ ] - Fix logo
+	[ ] - Shrink padding (to 0)
+	[ ] - Improve internal menu
+[ ] - Navbar fix unfix, and style modifier
